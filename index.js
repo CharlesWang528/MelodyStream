@@ -14,6 +14,6 @@ app.use(cookieSession({
 app.use(authRouter);
 app.use(productRouter);
 
-app.listen(3001, ()=>{
+app.listen(3003, ()=>{
     console.log("listening")
 });

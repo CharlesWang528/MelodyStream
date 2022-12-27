@@ -33,7 +33,7 @@ async (req, res) => {
     
     req.session.userId = user.id; //Added by cookie session
 
-    res.send("Acount Created");
+    res.redirect('/admin/products');
 
 });
 
@@ -55,7 +55,7 @@ async (req,res) =>{
 
     req.session.userId = user.id;
 
-    res.send('You are signed in');
+    res.redirect('/admin/products');
 
 });
 
