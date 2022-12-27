@@ -1,5 +1,6 @@
 const express = require('express');
-const {check, validationResult} = require('express-validator');
+
+const {handleErrors} = require('./middleware');
 const usersRepo = require('../../repositories/users');
 const signupTemplate = require('../../views/admin/auth/signup');
 const signinTemplate = require('../../views/admin/auth/signin');
@@ -20,13 +21,9 @@ router.post('/signup', [
     requirePassword,
     requirePasswordConfirmation
     ],
+    handleErrors(signupTemplate),
 async (req, res) => {
-    const {email, password, passwordConfirmation} = req.body;
-    const errors = validationResult(req);
-    if (! errors.isEmpty()){
-        console.log(errors);
-        return res.send(signupTemplate({req, errors}));
-    }
+    const {email, password} = req.body;
 
     //Create a user in our user repo to represent this person
 
@@ -37,7 +34,6 @@ async (req, res) => {
     req.session.userId = user.id; //Added by cookie session
 
     res.send("Acount Created");
-    console.log("here");
 
 });
 
@@ -50,13 +46,8 @@ router.get('/signin',(req, res) =>{
     res.send(signinTemplate({}));
 });
 
-router.post('/signin', [ requireEmailExists, requireValidPasswordForUser],
+router.post('/signin', [ requireEmailExists, requireValidPasswordForUser],handleErrors(signinTemplate),
 async (req,res) =>{
-    const errors = validationResult(req);
-    
-    if (!errors.isEmpty()){
-        return res.send(signinTemplate({errors}));
-    }
 
     const {email} = req.body;
 
