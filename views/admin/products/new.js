@@ -29,7 +29,7 @@ module.exports = ({ errors }) => {
 
             <div class="field">
               <label class="label">Description</label>
-              <input class="input" placeholder="Describe song here" name="price">
+              <input class="input" placeholder="Describe song here" name="description">
               </textarea>
             </div>
             

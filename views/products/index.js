@@ -6,7 +6,7 @@ module.exports = ({ products }) => {
       return `
         <div class="column is-one-quarter">
           <div class="card product-card">
-          <a href="/admin/products/${product.id}/edit">
+          <a href="/admin/products/${product.id}/details">
             <figure}>
               <img src="data:image/png;base64, ${product.image}"/>
             </figure>
