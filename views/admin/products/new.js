@@ -6,7 +6,7 @@ module.exports = ({ errors }) => {
     content: `
       <div class="columns is-centered">
         <div class="column is-half">
-          <h1 class="subtitle">Create a Product</h1>
+          <h1 class="subtitle">Add a new song</h1>
 
           <form method="POST" enctype="multipart/form-data">
             <div class="field">
@@ -14,11 +14,23 @@ module.exports = ({ errors }) => {
               <input class="input" placeholder="Title" name="title">
               <p class="help is-danger">${getError(errors, 'title')}</p>
             </div>
+
+            <div class="field">
+              <label class="label">Singer</label>
+              <input class="input" placeholder="Singer" name="singer">
+              <p class="help is-danger">${getError(errors, 'singer')}</p>
+            </div>
             
             <div class="field">
               <label class="label">Price</label>
               <input class="input" placeholder="Price" name="price">
               <p class="help is-danger">${getError(errors, 'price')}</p>
+            </div>
+
+            <div class="field">
+              <label class="label">Description</label>
+              <input class="input" placeholder="Describe song here" name="price">
+              </textarea>
             </div>
             
             <div class="field">

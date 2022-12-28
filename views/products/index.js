@@ -6,11 +6,14 @@ module.exports = ({ products }) => {
       return `
         <div class="column is-one-quarter">
           <div class="card product-card">
-            <figure>
+          <a href="/admin/products/${product.id}/edit">
+            <figure}>
               <img src="data:image/png;base64, ${product.image}"/>
             </figure>
+          </a>
             <div class="card-content">
               <h3 class="subtitle">${product.title}</h3>
+              <h3 class="subtitle">${product.singer}</h3>
               <h5>$${product.price}</h5>
             </div>
             <footer class="card-footer">
@@ -42,7 +45,7 @@ module.exports = ({ products }) => {
             <div class="column "></div>
             <div class="column is-four-fifths">
               <div>
-                <h2 class="title text-center">Trending</h2>
+                <h2 class="title text-center">Featured Items</h2>
                 <div class="columns products">
                   ${renderedProducts}  
                 </div>

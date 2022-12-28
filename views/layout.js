@@ -30,7 +30,7 @@ module.exports = ({ content }) => {
                   <ul class="social">
                     <li><a href=""><i class="fab fa-facebook"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://linkedin.com/in/charlesjwang/"><i class="fab fa-linkedin"></i></a></li> 
                     <li><a href=""><i class="fab fa-dribbble"></i></a></li>
                     <li><a href=""><i class="fab fa-google-plus"></i></a></li>
                   </ul>
@@ -41,7 +41,7 @@ module.exports = ({ content }) => {
               <div class="container navbar-container">
                 <div>
                   <a href="/">
-                    <h3 class="title">Music Shop</h3>
+                    <h3 class="title">不会有人不听歌吧</h3>
                   </a>
                 </div>
                 <div class="navbar-item">

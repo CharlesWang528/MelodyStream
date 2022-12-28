@@ -29,8 +29,8 @@ router.get('/admin/products/new',requireAuth,  (req, res) =>{
 router.post('/admin/products/new',requireAuth, upload.single('image'),[requireTitle,requirePrice], handleErrors(productsNewTemplate), async (req, res) => {
     
     const image = req.file.buffer.toString('base64');
-    const {title, price} = req.body;
-    await productsRepo.create({title, price, image});
+    const {title, price, singer, description} = req.body;
+    await productsRepo.create({title, price, singer, description,image});
 
 
     res.redirect('/admin/products');
