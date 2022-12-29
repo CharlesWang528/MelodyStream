@@ -4,18 +4,19 @@ const layout = require('../layout');
 module.exports = ({ product, errors }) => {
     return layout({
       content: `
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <h1 class="title"> ${product.title}</h1>
-  
-            <form method="POST" enctype="multipart/form-data">
+      
+      <div style="display: flex;">
 
+          <div style="flex: 1;">
+          <h1 class="title" id="target-title" > ${product.title}</h1>
             <figure}>
-            <img src="data:image/png;base64, ${product.image}" style="width:70%" />
+            <img src="data:image/png;base64, ${product.image}" style="width:50%" id="target-image"/>
             </figure>
+          </div>
 
 
-            <div class="field">
+            <div style="flex: 1;" id = "target-info">
+              <div class="field">
                 <label class="label">Singer</label>
                 ${product.singer}
                 <p class="help is-danger"></p>
@@ -32,11 +33,10 @@ module.exports = ({ product, errors }) => {
                 ${product.description}
                 <p class="help is-danger"></p>
               </div>
+            </div>
   
   
           
-            </form>
-          </div>
         </div>
       `
     });
