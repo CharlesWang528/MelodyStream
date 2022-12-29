@@ -37,7 +37,7 @@ module.exports = ({ product, errors }) => {
               <label class="label">Description</label>
               <input value="${
                 product.description
-              }" class="input" placeholder="Description" name="description">
+              }" class="input" placeholder="Change Description" name="description">
               
             </div>
 

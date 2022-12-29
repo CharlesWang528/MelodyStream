@@ -13,7 +13,9 @@ module.exports = ({ products }) => {
           </a>
             <div class="card-content">
               <h3 class="subtitle">${product.title}</h3>
-              <h3 class="subtitle">${product.singer}</h3>
+              <h3 >${product.singer}</h3>
+              <br>
+              <br>
               <h5>$${product.price}</h5>
             </div>
             <footer class="card-footer">
@@ -35,7 +37,7 @@ module.exports = ({ products }) => {
       <section class="banner">
         <div class="container">
           <div class="columns is-centered">
-            <img src="/images/banner.jpeg" />
+            <img src="/images/banner.png" />
           </div>
         </div>
       </section>
@@ -46,7 +48,7 @@ module.exports = ({ products }) => {
             <div class="column "></div>
             <div class="column is-four-fifths">
               <div>
-                <h2 class="title text-center">Featured Items</h2>
+                <h2 class="title text-center">Trending</h2>
                 <div class="columns products">
                   ${renderedProducts}  
                 </div>
