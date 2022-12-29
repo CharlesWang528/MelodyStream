@@ -16,6 +16,14 @@ module.exports = ({ product, errors }) => {
               }" class="input" placeholder="Title" name="title">
               <p class="help is-danger">${getError(errors, 'title')}</p>
             </div>
+
+            <div class="field">
+              <label class="label">Singer</label>
+              <input value="${
+                product.singer
+              }" class="input" placeholder="Singer" name="singer">
+              
+            </div>
             
             <div class="field">
               <label class="label">Price</label>
@@ -25,9 +33,15 @@ module.exports = ({ product, errors }) => {
               <p class="help is-danger">${getError(errors, 'price')}</p>
             </div>
 
+            <div class="field">
+              <label class="label">Description</label>
+              <input value="${
+                product.description
+              }" class="input" placeholder="Description" name="description">
+              
+            </div>
 
         
-            
             
             <div class="field">
               <label class="label">Image</label>            
