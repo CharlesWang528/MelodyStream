@@ -14,6 +14,7 @@ module.exports = ({ items }) => {
     //using reduced statement
 
     const totalPrice = items.reduce((prev, item) =>{
+        console.log(item);
 
         return prev + item.quantity * item.product.price;
 
