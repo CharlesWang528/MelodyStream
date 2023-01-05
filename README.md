@@ -10,8 +10,6 @@ Example Pictures
 <img width="1728" alt="Screenshot 2022-12-28 at 9 41 39 PM" src="https://user-images.githubusercontent.com/68451307/210885912-b26f2140-6e8e-4e8c-81c8-d45d07508a78.png">
 <img width="1728" alt="Screenshot 2022-12-28 at 9 41 43 PM" src="https://user-images.githubusercontent.com/68451307/210885919-af6af158-8a71-48c6-9f17-7c3a9ae7aade.png">
 <img width="1100" alt="Screenshot 2022-12-21 at 9 27 28 PM" src="https://user-images.githubusercontent.com/68451307/210885924-afd88dda-e8cd-4d87-b9e7-dcba74ecede9.png">
-<img width="903" alt="Screenshot 2022-12-21 at 9 27 34 PM" src="https://user-images.githubusercontent.com/68451307/210885930-99eba129-76ab-4a87-80c3-9059fe4ea713.png">
-<img width="773" alt="Screenshot 2022-12-23 at 12 08 37 PM" src="https://user-images.githubusercontent.com/68451307/210885932-8eb73f84-5894-4690-af58-fb4752b4c5ac.png">
 <img width="1728" alt="Screenshot 2022-12-28 at 9 41 49 PM" src="https://user-images.githubusercontent.com/68451307/210885951-7b5775a2-0d0d-44fd-88a3-e54fe8fb8405.png">
 <img width="1728" alt="Screenshot 2022-12-28 at 9 43 29 PM" src="https://user-images.githubusercontent.com/68451307/210885961-c46888dd-1e0f-4ed7-879a-102cb740a6a4.png">
 <img width="1728" alt="Screenshot 2022-12-28 at 9 43 50 PM" src="https://user-images.githubusercontent.com/68451307/210885970-b69c7bcb-4439-45cc-9452-f1cba7ca7920.png">
